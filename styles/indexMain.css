@@ -1,0 +1,131 @@
+.mainGrid {
+    width: 1285.5px;
+    height: 607px;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 49px;
+    align-items: center;
+}
+
+.mainFlex {
+    display: flex;
+    flex-direction: column;
+    width: 568.0px;
+    height: 492.0px;
+    justify-content: center;
+}
+
+.mainFlex h1 {
+    color: var(--color-light-black);
+    font-family: var(--font-family);
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -3px;
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+.mainFlex p {
+    color: var(--color-gray);
+    font-family: var(--second-family);
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 0.7;
+    margin-bottom: 53px;
+}
+
+.mainImg {
+    position: relative;
+    width: 680.5px;
+    height: 607.0px;
+}
+
+.mainChickenHell {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.mainGraph {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.usersCount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.usersCount p {
+    color: var(--color-dark-gray);
+    opacity: 0.4;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.mainLine {
+    width: 54.0px;
+    height: 1px;
+    opacity: 0.2;
+    background: #201F1F;
+}
+
+.mainButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.getStartedButton {
+    width: 156.0px;
+    height: 59.0px;
+    border-radius: 12.412px;
+    background: var(--purple-color-main);
+    border: none;
+}
+
+.getStartedButtonLink {
+    color: var(--white-color);
+    font-family: var(--font-family);
+    font-size: 16.271px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.163px;
+    text-transform: capitalize;
+}
+
+.goProButton {
+    width: 110.0px;
+    height: 59.0px;
+    background-color: var(--white-color);
+    border: 1.5px solid var(--purple-color-main);
+    border-radius: 12.412px;
+}
+
+.goProButtonLink {
+    color: var(--purple-color-main);
+    font-family: var(--font-family);
+    font-size: 16.271px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.163px;
+    text-transform: capitalize;
+
+}
