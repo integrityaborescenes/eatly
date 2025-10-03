@@ -1,0 +1,147 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.headerGrid {
+    display: grid;
+    grid-template-columns: 17% 33% 50%;
+    align-items: center;
+    width: 1248.0px;
+    height: 62.4px;
+    margin-top: 48px;
+    margin-right: 96px;
+    margin-left: 96px;
+}
+
+.headerLogo {
+    width: 111.9px;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    margin: 0;
+    align-items: center;
+    justify-content: start;
+}
+
+.headerLogo p {
+    color: var(--purple-color-main);
+    font-family: var(--font-family);
+    font-size: 21.176px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.headerLogo img {
+    display: block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+}
+
+.header-menu-list {
+    width: 374.5px;
+    height: 27.0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 53.486px;
+    justify-content: start;
+
+}
+
+.header-menu-item {
+    transition: all 0.2s ease;
+    will-change: transform;
+}
+
+.header-menu-item:hover {
+    transform: scale(1.05);
+}
+
+.header-menu-item-link {
+    color: var(--color-dark-gray);
+    font-family: var(--second-family);
+    font-size: 17.829px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.743px;
+}
+
+
+.login-signup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8.914px;
+    justify-content: end;
+}
+
+.loginButton {
+    width: 102.5px;
+    height: 62.7px;
+    padding: 17.829px 26.743px;
+    border-radius: 17.829px;
+    border: none;
+    background-color: var(--white-color);
+    cursor: pointer;
+    transition: all 1s ease;
+    will-change: transform;
+}
+
+.loginButton:hover {
+    transform: scale(1.05);
+}
+
+.signUpButton {
+    width: 121.5px;
+    height: 62.7px;
+    padding: 17.829px 26.743px;
+    gap: 11.143px;
+    border-radius: 17.829px;
+    border: none;
+    background-color: var(--purple-color-main);
+    cursor: pointer;
+    transition: all 1s ease;
+    will-change: transform;
+}
+
+.signUpButton:hover {
+    transform: scale(1.05);
+}
+
+.loginButtonLink {
+    color: var(--color-dark-gray);
+    font-family: var(--second-family);
+    font-size: 17.829px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.743px;
+}
+
+.signUpButtonLink {
+    color: var(--white-color);
+    font-family: var(--second-family);
+    font-size: 17.829px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.743px;
+}
+
+.line {
+    width: 1246px;
+    height: 1px;
+    margin-top: 24px;
+    background-color: var(--color-light-gray);
+}

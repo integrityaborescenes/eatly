@@ -1,6 +1,6 @@
 @import url("fonts.css");
 @import url("normaliz.css");
-
+@import url("header.css");
 
 :root {
     --font-family: "Poppins", sans-serif;
@@ -10,9 +10,17 @@
     --font4: "Public Sans", sans-serif;
     --font5: "Quicksand", sans-serif;
     --font6: "Plus Jakarta Sans", sans-serif;
+
+    --purple-color-main: #6C5FBC;
+    --white-color: #F9F9F9;
+    --color-dark-gray: #606060;
+    --color-light-gray: #CBCBCB;
+}
+
+.container {
+    width: 1440px;
 }
 
 body {
-    max-width: 100%;
+    background-color: var(--white-color);
 }
-
