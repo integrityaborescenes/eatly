@@ -1,8 +1,7 @@
 .mainGrid {
-    width: 1285.5px;
     height: 607px;
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 568px 680px ;
     justify-content: center;
     margin: 0 auto;
     padding-top: 49px;
@@ -15,6 +14,7 @@
     width: 568.0px;
     height: 492.0px;
     justify-content: center;
+    padding-right: 37px;
 }
 
 .mainFlex h1 {
@@ -43,22 +43,24 @@
 
 .mainImg {
     position: relative;
-    width: 680.5px;
-    height: 607.0px;
 }
 
 .mainChickenHell {
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 0;
+    top: 6%;
+    right: 3%;
+    filter: drop-shadow(-9.844px 12.305px 20.508px rgba(0, 0, 0, 0.15));
+
 }
 
 .mainGraph {
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
+    bottom: 8%;
+    left: 5%;
+    filter: drop-shadow(13.407px -16.759px 27.932px rgba(0, 0, 0, 0.15));
+
 }
 
 .usersCount {
@@ -69,6 +71,7 @@
 }
 
 .usersCount p {
+    margin: 0;
     color: var(--color-dark-gray);
     opacity: 0.4;
     font-family: var(--font-family);
@@ -97,6 +100,13 @@
     border-radius: 12.412px;
     background: var(--purple-color-main);
     border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    will-change: transform;
+}
+
+.getStartedButton:hover {
+    transform: scale(1.05);
 }
 
 .getStartedButtonLink {
@@ -116,6 +126,13 @@
     background-color: var(--white-color);
     border: 1.5px solid var(--purple-color-main);
     border-radius: 12.412px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    will-change: transform;
+}
+
+.goProButton:hover {
+    transform: scale(1.05);
 }
 
 .goProButtonLink {
@@ -126,6 +143,29 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.163px;
-    text-transform: capitalize;
+}
 
+.trustPilotStars {
+    width: 301.0px;
+    height: 31.0px;
+    padding-top: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 9px;
+}
+
+.trustPilotStars p{
+    margin: 0;
+    color: var(--color-blue-gray);
+    font-family: var(--font6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    opacity: 0.7;
+}
+
+.stars {
+    padding-bottom: 4px;
 }
