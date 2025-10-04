@@ -1,7 +1,7 @@
 @import url("fonts.css");
 @import url("normaliz.css");
 @import url("header.css");
-@import url("indexMain.css");
+@import url("home.css");
 
 :root {
     --font-family: "Poppins", sans-serif;
@@ -14,12 +14,16 @@
 
     --purple-color-main: #6C5FBC;
     --purple-color-dark: #5C4EAE;
+    --purple-color-light: #C5BFED;
     --white-color: #F9F9F9;
     --color-dark-gray: #606060;
     --color-light-gray: #CBCBCB;
+    --color-super-light-gray: #C5C5C5;
     --color-light-black: #201F1F;
     --color-gray: #676767;
     --color-blue-gray: #334155;
+
+
 }
 
 .container {

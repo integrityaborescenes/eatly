@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding-top: 49px;
     align-items: center;
+    padding-bottom: 85px;
 }
 
 .mainFlex {
@@ -168,4 +169,63 @@
 
 .stars {
     padding-bottom: 4px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 66px;
+    width: 1440px;
+    height: 220.5px;
+    background-image: url("/images/feauteresbg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.featuresLine1 {
+    width: 123px;
+    height: 1px;
+    opacity: 0.15;
+    background: var(--color-super-light-gray);
+    transform: rotate(100grad)
+}
+
+.featuresLine2 {
+    width: 123px;
+    height: 1px;
+    opacity: 0.15;
+    background: var(--color-super-light-gray);
+    transform: rotate(100grad)
+}
+
+
+.featuresTextFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    gap: 11px;
+    text-align: center;
+}
+
+.featuresText {
+}
+
+.featuresText h3 {
+    color: var(--white-color);
+    font-family: var(--font4);
+    font-size: 43.2px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.featuresText p {
+    color: var(--purple-color-light);
+    font-family: var(--second-family);
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px;
 }
