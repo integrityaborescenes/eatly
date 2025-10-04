@@ -647,12 +647,16 @@
     line-height: 40.345px;
 }
 
-.heartIcon {
+.heartIcon{
     position: absolute;
     right: 8%;
     top: 4%;
+    cursor: pointer;
 }
 
+.heartIcon path {
+    fill: var(--purple-color-superdark);
+}
 
 .viewAllDishes {
     display: flex;
