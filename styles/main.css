@@ -17,14 +17,17 @@
     --purple-color-superdark: #323142;
     --purple-color-light: #C5BFED;
     --white-color: #F9F9F9;
+    --super-white-color: #FFF;
     --color-dark-gray: #606060;
     --color-light-gray: #CBCBCB;
     --color-super-light-gray: #C5C5C5;
     --color-light-black: #201F1F;
     --color-gray: #676767;
     --color-blue-gray: #334155;
-
-
+    --color-light-yellow: #F7EDD0;
+    --color-dark-yellow: #DAA31A;
+    --color-light-red: #F7C5BA;
+    --color-dark-red: #FB471D;
 }
 
 .container {
