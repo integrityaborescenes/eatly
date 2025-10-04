@@ -352,7 +352,7 @@
 
 .restaurantGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     gap: 30px;
 }
 
@@ -394,7 +394,7 @@
     border-radius: 30.023px 30.023px 0 0;
 }
 
-.highlight1 {
+.highlightRestaurant1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,7 +404,7 @@
     background: var(--color-light-yellow);
 }
 
-.highlight1 p {
+.highlightRestaurant1 p {
     flex-shrink: 0;
     color: var(--color-dark-yellow);
     font-family: var(--font-family);
@@ -414,7 +414,7 @@
     line-height: normal;
 }
 
-.highlight2 {
+.highlightRestaurant2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -424,7 +424,7 @@
     background: var(--color-light-red);
 }
 
-.highlight2 p {
+.highlightRestaurant2 p {
     flex-shrink: 0;
     color: var(--color-dark-red);
     font-family: var(--font-family);
@@ -434,7 +434,7 @@
     line-height: normal;
 }
 
-.info {
+.infoRestaurant {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -442,7 +442,7 @@
     gap: 6.5px;
 }
 
-.info p {
+.infoRestaurant p {
     color: #8E97A6;
     font-family: var(--third-family);
     font-size: 19.34px;
@@ -459,15 +459,19 @@
 
 .viewAllRestaurants {
     display: flex;
+    justify-content: right;
+}
+
+.viewAllRestaurantsFlex {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    justify-content: right;
     transition: all 0.2s ease;
     will-change: transform;
 }
 
-.viewAllRestaurants:hover {
+.viewAllRestaurantsFlex:hover {
     transform: scale(1.05);
 }
 
@@ -482,7 +486,209 @@
     margin: 0;
 }
 
+.ourTopDishes {
+    width: 1247.0px;
+    height: 725.0px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.ourTopDishesFlex  {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.ourTopDishesFlex h3{
+    color: var(--purple-color-superdark);
+    font-family: var(--font-family);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25.558px;
+    padding-bottom: 10px;
+    text-align: center
+}
+
+.dishesList {
+    width: 1246.0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.dishes {
+    max-width: 224.6px;
+    height: 390.4px;
+    border-radius: 34.581px;
+    border: 1.441px solid #F4F4F6;
+    background: var(--super-white-color);
+    box-shadow: 6.848px 82.181px 41.091px 0 rgba(229, 229, 229, 0.70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dishes h4 {
+    color: var(--purple-color-superdark);
+    font-family: var(--font-family);
+    font-size: 23.054px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37.463px;
+}
+
+.dishesFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.dishesText {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    width: 178.7px;
+    margin-left: 15px;
+}
+
+.highlightDishes1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58.9px;
+    height: 22.2px;
+    border-radius: 4.828px;
+    background: var(--color-light-yellow);
+}
+
+.highlightDishes1 p{
+    color: var(--color-dark-yellow);
+    font-family: var(--font-family);
+    font-size: 11.422px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
+.highlightDishes2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58.9px;
+    height: 22.2px;
+    border-radius: 4.828px;
+    background: var(--color-light-red);
+}
 
+.highlightDishes2 p{
+    color: var(--color-dark-red);
+    font-family: var(--font-family);
+    font-size: 11.422px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.highlightDishes3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58.9px;
+    height: 22.2px;
+    border-radius: 4.828px;
+    background-color: var(--color-light-green);
+
+}
+
+.highlightDishes3 p {
+    color: var(--color-dark-green);
+    font-family: var(--font-family);
+    font-size: 11.422px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 10;
+}
+
+.infoDishes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    gap: 1.5px;
+}
+
+.infoDishes p {
+    color: #8E97A6;
+    font-family: var(--third-family);
+    font-size: 17.291px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.054px;
+}
+
+.costDishes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.costDishes p {
+    color: var(--purple-color-superdark);
+    font-family: var(--third-family);
+    font-size: 25.94px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.345px;
+}
+
+.heartIcon {
+    position: absolute;
+    right: 8%;
+    top: 4%;
+}
+
+
+.viewAllDishes {
+    display: flex;
+    justify-content: right;
+}
+
+.viewAllDishesFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    will-change: transform;
+}
+
+.viewAllDishesFlex:hover {
+    transform: scale(1.05);
+}
+
+.viewAllDishes p {
+    color: #ACADB9;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45.184px;
+    letter-spacing: -0.1px;
+    margin: 0;
+}
+
+.costDishesButton {
+    transition: all 0.2s ease;
+    will-change: transform;
+}
+
+.costDishesButton:hover {
+    transform: scale(1.05);
+}
 
