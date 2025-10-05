@@ -696,3 +696,284 @@
     transform: scale(1.05);
 }
 
+.purchasesControl {
+    max-width: 1250.0px;
+    height: 601.0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    margin-top: 50px;
+}
+
+.purchasesFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchasesTextFlex  {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 570.7px;
+    height: 460.0px;
+
+}
+
+.purchasesTextFlex h3 {
+    color: var(--color-light-black);
+    font-family: var(--font-family);
+    font-size: 50.923px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.198px;
+}
+
+.purchasesMenuList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.purchasesMenuItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 217.3px;
+    height: 80.1px;
+    gap: 20px;
+    position: relative;
+    width: 345.2px;
+    height: 88.3px;
+    flex-shrink: 0;
+    border-radius: 12.041px;
+    background: var(--super-white-color);
+    box-shadow: 0 20.068px 30.102px 0 rgba(70, 70, 70, 0.10);
+}
+
+.purchasesMenuItem img {
+    padding-left: 20px;
+}
+
+.purchasesMenuItemColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.purchasesMenuItemColumn h4{
+    color: var(--purple-color-superdark);
+    font-family: var(--font-family);
+    font-size: 19.065px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.purchasesMenuItemColumn h5 {
+    color: var(--purple-color-superdark);
+    font-family: var(--font-family);
+    font-size: 12.041px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.menuDate {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    color: var(--color-light-gray);
+    font-family: var(--font-family);
+    font-size: 13.044px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.purchasesDashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 534.0px;
+    height: 466.5px;
+    border-radius: 25.129px;
+    border: 1.571px solid  #EDF2F7;
+    background: var(--super-white-color);
+    box-shadow: 0 20.068px 30.102px 0 rgba(70, 70, 70, 0.10);
+}
+
+.dashboardFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.dashboardTextAndDate {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    align-items: center;
+}
+
+.dashboardTextAndDate h4{
+    color: var(--purple-color-superdark);
+    font-family: var(--third-family);
+    font-size: 28.271px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 135%;
+}
+
+.dashboardTextAndDate p{
+    color: var(--purple-color-superdark);
+    text-align: right;
+    font-family: var(--third-family);
+    font-size: 18.847px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.dateBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 12.565px 18.847px;
+    justify-content: center;
+    border-radius: 12.565px;
+    background: var(--white-color);
+    border: none;
+    cursor: pointer;
+}
+
+.dashboardCard {
+    display: flex;
+    flex-direction: column;
+    width: 458.6px;
+    height: 135.1px;
+    border-radius: 18.847px;
+    border: 1.571px solid  #EDF2F7;
+    justify-content: center;
+}
+
+.dashboardColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+}
+
+.dashboardCardFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboardCardFlex h5{
+    color: var(--purple-color-superdark);
+    text-align: right;
+    font-family: var(--third-family);
+    font-size: 21.988px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0.314px;
+
+}
+
+.expenceColumn {
+    width: 241.0px;
+    height: 55.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expenceColumn h4 {
+    color: var(--purple-color-superdark);
+    font-family: var(--third-family);
+    font-size: 18.847px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.expenceColumn p {
+    color: var(--color-light-gray);
+    font-family: var(--third-family);
+    font-size: 15.706px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.dashboardLinePurpleBack {
+    position: relative;
+    width: 408.4px;
+    height: 9.4px;
+    border-radius: 78.529px;
+    background: var(--purple-color-light);
+    z-index: 1;
+}
+
+.dashboardLinePurple {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 296.8px;
+    height: 9.4px;
+    flex-shrink: 0;
+    border-radius: 78.529px;
+    background: var(--purple-color-main);
+    animation: fillLinePurple 1.5s ease-out forwards;
+}
+
+
+.dashboardLineYellowBack {
+    position: relative;
+    width: 408.4px;
+    height: 9.4px;
+    border-radius: 78.529px;
+    background: var(--color-light-yellow);
+    z-index: 1;
+}
+
+.dashboardLineYellow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 296.8px;
+    height: 9.4px;
+    flex-shrink: 0;
+    border-radius: 78.529px;
+    background: var(--color-dark-yellow);
+    animation: fillLineYellow 1.5s ease-out forwards;
+}
+
+
+@keyframes fillLinePurple {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes fillLineYellow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
