@@ -1110,6 +1110,7 @@
     align-items: center;
     gap: 46px;
     transform: translateX(0%);
+    transition: transform 0s ease;
 }
 
 .reviewRating {
@@ -1183,13 +1184,12 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 20%;
+    width: 50px;
     height: 11.0px;
     border-radius: 50px;
     background: var(--purple-color-main);
     z-index: 1;
     transform: translateX(0%);
-    transition: transform 0.1s ease;
+    transition: transform 0s ease;
     cursor: grab;
 }
-
