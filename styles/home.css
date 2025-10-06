@@ -1089,7 +1089,7 @@
     display: flex;
     justify-content: start;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 200%;
 }
 
 .anotherReviewsBlock{
@@ -1107,9 +1107,9 @@
 .anotherReviewBlock {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 46px;
+    transform: translateX(0%);
 }
 
 .reviewRating {
@@ -1133,7 +1133,6 @@
     border-radius: 25.129px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 20.068px 30.102px 0 rgba(70, 70, 70, 0.10);
 }
 
 .anotherReviewBlockColumns2 {
@@ -1146,7 +1145,6 @@
     border-radius: 25.129px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 20.068px 30.102px 0 rgba(70, 70, 70, 0.10);
 }
 
 .anotherReviewBlockColumns3 {
@@ -1159,7 +1157,6 @@
     border-radius: 25.129px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 20.068px 30.102px 0 rgba(70, 70, 70, 0.10);
 }
 
 .anotherReviewBlockColumns4 {
@@ -1172,7 +1169,6 @@
     border-radius: 25.129px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 20.068px 30.102px 0 rgba(70, 70, 70, 0.10);
 }
 
 .sliderLineBack {
@@ -1181,16 +1177,19 @@
     height: 11.0px;
     border-radius: 50px;
     background: var(--purple-color-light);
-    z-index: 1;
 }
 
 .sliderLine {
     position: absolute;
     left: 0;
     top: 0;
-    width: 25%;
+    width: 20%;
     height: 11.0px;
     border-radius: 50px;
     background: var(--purple-color-main);
-    z-index: 10;
+    z-index: 1;
+    transform: translateX(0%);
+    transition: transform 0.1s ease;
+    cursor: grab;
 }
+
