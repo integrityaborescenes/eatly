@@ -64,7 +64,6 @@
 
 .header-menu-item {
     transition: all 0.2s ease;
-    will-change: transform;
 }
 
 .header-menu-item:hover {
@@ -99,7 +98,6 @@
     background-color: var(--white-color);
     cursor: pointer;
     transition: all 0.2s ease;
-    will-change: transform;
 }
 
 .loginButton:hover {
@@ -116,7 +114,6 @@
     background-color: var(--purple-color-main);
     cursor: pointer;
     transition: all 0.2s ease;
-    will-change: transform;
 }
 
 .signUpButton:hover {
