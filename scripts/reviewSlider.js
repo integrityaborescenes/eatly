@@ -7,16 +7,16 @@ let xLine = 0;
 let startX = 0;
 let moved = false
 
-reviewCont.addEventListener('mousedown', (e) => {
+reviewCont.addEventListener('pointerdown', (e) => {
     startX =  e.clientX - xLine
 })
 
-sliderLine.addEventListener('mousedown', (e) => {
+sliderLine.addEventListener('pointerdown', (e) => {
     moved = true
     sliderLine.style.cursor = 'grabbing'
 })
 
-reviewCont.addEventListener('mousemove', (e) => {
+reviewCont.addEventListener('pointermove', (e) => {
     if (moved) {
         let lineWidth = sliderLine.offsetWidth
         let lineWidthBack = sliderLineBack.offsetWidth
@@ -34,7 +34,7 @@ reviewCont.addEventListener('mousemove', (e) => {
     }
 })
 
-document.addEventListener('mouseup', (e) => {
+document.addEventListener('pointerup', (e) => {
     moved = false
     sliderLine.style.cursor = 'grab'
 })

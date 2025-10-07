@@ -1,33 +1,93 @@
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    flex-direction: column;
+    justify-content: center;
     max-width: 1440px;
+    height: 135px;
+    width: 100%;
     margin: 0 auto;
+    align-items: center;
 }
 
 .headerGrid {
-    display: grid;
-    grid-template-columns: 17% 33% 50%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     max-width: 1248.0px;
     width: 100%;
     height: 62.4px;
-    margin-top: 48px;
-    margin-right: 96px;
-    margin-left: 96px;
+    gap: 103px;
 }
 
 .headerLogo {
-    width: 111.9px;
+    max-width: 112px;
+    width: 100%;
     height: 43px;
     display: flex;
     flex-direction: row;
     gap: 11px;
-    margin: 0;
+    margin: 0 auto;
     align-items: center;
     justify-content: start;
 }
+
+.burgerMenu {
+    display: none;
+    align-items: center;
+    max-width: 32px;
+    width: 100%;
+    height: 23px;
+    position: relative;
+    cursor: pointer;
+}
+
+.open {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-light-black);
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+
+.burgerMenu span {
+    width: 32px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--color-light-black);
+    border-radius: 15px;
+}
+
+.burgerMenu span::before, .burgerMenu span::after {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 32px;
+    content: "";
+    background-color: var(--color-light-black);
+    border-radius: 15px;
+}
+
+.burgerMenu span::before {
+    right: 0;
+    bottom: 11px;
+}
+
+.burgerMenu span::after {
+    left: 0;
+    top: 11px;
+}
+
+.burgerMenu.active::before {
+}
+
+
 
 .headerLogo p {
     color: var(--purple-color-main);
@@ -52,18 +112,18 @@
 }
 
 .header-menu-list {
-    width: 374.5px;
+    max-width: 696px;
     height: 27.0px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 53.486px;
     justify-content: start;
-
 }
 
 .header-menu-item {
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .header-menu-item:hover {
@@ -79,7 +139,6 @@
     line-height: 26.743px;
 }
 
-
 .login-signup {
     display: flex;
     flex-direction: row;
@@ -90,14 +149,17 @@
 }
 
 .loginButton {
-    width: 102.5px;
+    display: flex;
+    max-width: 102.5px;
     height: 62.7px;
+    width: 100%;
     padding: 17.829px 26.743px;
     border-radius: 17.829px;
     border: none;
     background-color: var(--white-color);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
+    align-items: center;
 }
 
 .loginButton:hover {
@@ -105,15 +167,17 @@
 }
 
 .signUpButton {
-    width: 121.5px;
+    display: flex;
+    align-items: center;
+    max-width: 121.5px;
     height: 62.7px;
+    width: 100%;
     padding: 17.829px 26.743px;
-    gap: 11.143px;
     border-radius: 17.829px;
     border: none;
     background-color: var(--purple-color-main);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .signUpButton:hover {
@@ -139,8 +203,160 @@
 }
 
 .line {
-    width: 1246px;
+    max-width: 1248px;
+    width: 98%;
     height: 1px;
     margin-top: 24px;
     background-color: var(--color-light-gray);
+}
+
+@media (max-width: 1024px) {
+    .line {
+        max-width: 886.0px;
+    }
+
+    .headerGrid {
+        max-width: 887px;
+        gap: 73px;
+        height: 45px;
+    }
+
+    .headerLogo {
+        max-width: 79px;
+    }
+
+    .headerLogo img {
+        width: 32px;
+        height: 30px;
+    }
+
+    .headerLogo p{
+        font-size: 15.058px;
+        line-height: 130%;
+    }
+
+    .header-menu-list {
+        max-width: 489px;
+    }
+
+    .header-menu-item-link {
+        font-size: 12.678px;
+    }
+
+    .loginButton {
+        width: 73.0px;
+        height: 45.4px;
+    }
+
+    .loginButtonLink {
+        font-size: 12px;
+    }
+
+    .signUpButton {
+        width: 86.0px;
+        height: 45.4px;
+        border-radius: 12px;
+        padding: 12.678px 19.017px;
+    }
+
+    .signUpButtonLink {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 710px) {
+    .line {
+        max-width: 550.0px;
+    }
+
+
+    .headerGrid {
+        max-width: 550px;
+        height: 35px;
+        position: relative;
+    }
+
+    .burgerMenu {
+        display: flex;
+        position: absolute;
+        right: 2%;
+    }
+
+    .headerLogo {
+        width: 112px;
+    }
+
+    .headerLogo img {
+        width: 45px;
+        height: 42px;
+    }
+
+    .headerLogo p{
+        font-size: 21.176px;
+    }
+
+
+    .header-menu-list {
+        display: none;
+    }
+
+
+    .login-signup {
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width: 410px) {
+    .line {
+        max-width: 314.0px;
+    }
+
+
+    .headerGrid {
+        max-width: 311px;
+        gap: 168px;
+        height: 42px;
+    }
+
+    .headerLogo {
+        max-width: 79px;
+    }
+
+    .headerLogo img {
+        width: 45px;
+        height: 42px;
+    }
+
+    .headerLogo p{
+        font-size: 21.176px;
+    }
+
+    .header-menu-list {
+        visibility: hidden;
+    }
+
+    .header-menu-item-link {
+        font-size: 12.678px;
+    }
+
+    .loginButton {
+        width: 73.0px;
+        height: 45.4px;
+    }
+
+    .loginButtonLink {
+        font-size: 12px;
+    }
+
+    .signUpButton {
+        width: 86.0px;
+        height: 45.4px;
+        border-radius: 12px;
+        padding: 12.678px 19.017px;
+    }
+
+    .signUpButtonLink {
+        font-size: 12px;
+    }
 }

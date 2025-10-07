@@ -4,7 +4,6 @@
     grid-template-columns: 568px 680px ;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 49px;
     align-items: center;
     padding-bottom: 85px;
 }
@@ -714,7 +713,6 @@
     gap: 48px;
     width: 570.7px;
     height: 460.0px;
-
 }
 
 .purchasesTextFlex h3 {
@@ -774,6 +772,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
+}
+
+.purchasesLine {
+    width: 1248px;
+    height: 1px;
+    margin-top: 24px;
+    background-color: var(--color-light-gray);
 }
 
 .menuDate {
