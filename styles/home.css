@@ -1,20 +1,25 @@
 .mainGrid {
+    max-width: 1248px;
+    width: 100%;
     height: 607px;
     display: grid;
-    grid-template-columns: 568px 680px ;
+    grid-template-columns: 50% 50% ;
     justify-content: center;
     margin: 0 auto;
     align-items: center;
+    justify-items: start;
     padding-bottom: 85px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .mainFlex {
     display: flex;
     flex-direction: column;
-    width: 568.0px;
+    max-width: 568.0px;
+    width: 100%;
     height: 492.0px;
     justify-content: center;
-    padding-right: 37px;
 }
 
 .mainFlex h1 {
@@ -82,7 +87,8 @@
 }
 
 .mainLine {
-    width: 54.0px;
+    max-width: 54.0px;
+    width: 100%;
     height: 1px;
     opacity: 0.2;
     background: #201F1F;
@@ -95,7 +101,8 @@
 }
 
 .getStartedButton {
-    width: 156.0px;
+    max-width: 156.0px;
+    width: 100%;
     height: 59.0px;
     border-radius: 12.412px;
     background: var(--purple-color-main);
@@ -120,7 +127,8 @@
 }
 
 .goProButton {
-    width: 110.0px;
+    max-width: 110.0px;
+    width: 100%;
     height: 59.0px;
     background-color: var(--white-color);
     border: 1.5px solid var(--purple-color-main);
@@ -144,7 +152,8 @@
 }
 
 .trustPilotStars {
-    width: 301.0px;
+    max-width: 301.0px;
+    width: 100%;
     height: 31.0px;
     padding-top: 33px;
     display: flex;
@@ -173,7 +182,8 @@
     flex-direction: row;
     margin: 0 auto;
     gap: 66px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 220.5px;
     background-image: url("/images/feauteresbg.svg");
     background-position: center;
@@ -225,6 +235,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: 21.6px;
+}
+
+.mobileDownloadAppBlock {
+    max-width: 373px;
+    max-height: 625px;
+    width: 100%;
 }
 
 .downloadAppBlock {
@@ -1282,4 +1298,511 @@
     letter-spacing: 0.443px;
 }
 
+.lineMain {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1248px;
+    height: 1px;
+    background-color: var(--color-light-gray);
+}
+
+@media (max-width: 1080px) {
+    .mainGrid {
+        max-width: 914px;
+        max-height: 450px;
+    }
+
+    .mainFlex h1 {
+        font-size: 53.333px;
+        letter-spacing: -2.133px;
+        margin-bottom: 11px;
+        margin-top: 12px;
+    }
+
+    .mainFlex p {
+        font-size: 12.8px;
+        line-height: 19.911px;
+        margin-bottom: 37px;
+    }
+
+    .usersCount {
+        gap: 14px;
+    }
+
+    .usersCount p{
+        font-size: 10.667px;
+        letter-spacing: 1.422px;
+        margin: 0;
+    }
+
+    .mainLine {
+        max-width: 38.4px;
+    }
+
+    .mainButtons {
+        gap: 12px;
+    }
+
+    .getStartedButton {
+        max-width: 110.9px;
+        height: 42.0px;
+        border-radius: 8.826px;
+    }
+
+    .getStartedButtonLink {
+        font-size: 11.57px;
+        letter-spacing: 0.116px;
+    }
+
+    .goProButton {
+       max-width: 78.2px;
+        height: 42.0px;
+        border-radius: 8.826px;
+    }
+
+    .goProButtonLink {
+        font-size: 11.57px;
+        letter-spacing: 0.116px;
+    }
+
+    .trustPilotStars {
+        max-width: 214.4px;
+        height: 23.0px;
+        gap: 6px;
+        padding-top: 23px;
+    }
+
+    .trustPilotStars p {
+        font-size: 11.378px;
+        line-height: 17.067px;
+        margin: 0;
+    }
+
+    .stars {
+        width: 68.1px;
+        height: 10.9px;
+    }
+
+    .trustpilotLogo {
+        width: 87.5px;
+        height: 21.5px;
+    }
+
+    .mainImg {
+        padding-right: 10px;
+    }
+
+    .mainBludo {
+        max-width: 483px;
+        max-height: 431px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainChickenHell {
+        max-width: 233.7px;
+        max-height: 63.6px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainGraph {
+        max-width: 147.4px;
+        max-height: 146.1px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .features {
+        max-width: 1024.0px;
+        height: 156.8px;
+        background-image: url("/images/feauteresbg2.svg");
+        gap: 47px;
+    }
+
+    .featuresLine1,.featuresLine2{
+        width: 87.5px;
+    }
+
+    .featuresText h3 {
+        font-size: 30.72px;
+        line-height: 38.4px;
+    }
+
+    .featuresText p {
+        font-size: 10.24px;
+        line-height: 15.36px;
+    }
+
+    .downloadAppBlock {
+        max-width: 897.4px;
+        height: 529.8px;
+    }
+
+
+    .downloadAppAdvantages ul {
+        gap: 19px;
+        margin-bottom: 42px;
+    }
+
+    .downloadAppAdvantages p {
+        font-size: 14.46px;
+        line-height: 21.691px;
+    }
+
+    .downloadButton {
+        max-width: 132.3px;
+        height: 44.8px;
+        border-radius: 10.436px;
+    }
+
+    .downloadButtonTextFlex {
+        gap: 10px;
+    }
+
+    .mobileDownloadAppBlock {
+        width: 264.2px;
+        height: 444.4px;
+    }
+
+    .downloadButtonTextFlex p {
+        font-size: 12.844px;
+        line-height: 16.055px;
+    }
+
+    .downloadButtonTextFlex img {
+        width: 19.3px;
+        height: 19.3px;
+    }
+
+    .vectorToDownloadButton {
+        width: 120px;
+        height: 40px;
+        right: 19%;
+        bottom: -4%;
+    }
+}
+
+@media (max-width: 710px) {
+    .main {
+        display: flex;
+        width: 100vw;
+        height: 900px;
+        align-items: center;
+    }
+
+    .mainGrid {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainFlex {
+        align-items: center;
+    }
+
+    .mainFlex p, h1 {
+        text-align: center;
+    }
+
+    .usersCount {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mainButtons {
+        gap: 14px;
+        width: 227.4px;
+        height: 47.2px;
+    }
+
+    .getStartedButton {
+        max-width: 124.9px;
+        height: 47.2px;
+        width: 100%;
+        border-radius: 9.937px;
+    }
+
+    .getStartedButtonLink {
+        font-size: 13.027px;
+        letter-spacing: 0.13px;
+    }
+
+    .goProButton {
+        max-width: 88.1px;
+        height: 47.2px;
+        border-radius: 9.937px;
+    }
+
+    .goProButtonLink {
+        font-size: 13.027px;
+        letter-spacing: 0.13px;
+    }
+
+    .features {
+        max-width: 710px;
+        height: 748px;
+        background-image: url("/images/feauteresbg3Vertical.svg");
+    }
+
+    .featuresTextFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .featuresLine1,.featuresLine2{
+        width: 246px;
+        height: 1px;
+        transform: rotate(0grad)
+    }
+
+    .featuresText h3 {
+        font-size: 43.2px;
+        line-height: 54px;
+    }
+
+    .featuresText p {
+        font-size: 14.4px;
+        line-height: 21.6px;
+    }
+
+    .downloadAppBlock {
+        max-width: 100vh;
+        height: 100%;
+    }
+
+    .downloadAppBlockGrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .downloadAppBlockImg {
+        order: 2;
+    }
+
+    .downloadAppBlockText {
+        font-size: 36.212px;
+        line-height: 41.385px;
+        order: 1;
+        align-items: center;
+    }
+
+    .downloadAppBlockText h3{
+        text-align: center;
+    }
+
+    .downloadAppAdvantages ul {
+        gap: 16px;
+        margin-bottom: 42px;
+    }
+
+    .downloadAppAdvantages p {
+        text-align: center;
+        font-size: 14.46px;
+        line-height: 21.691px;
+    }
+
+    .downloadButton {
+        max-width: 150px;
+        height: 55px;
+        width: 100%;
+        border-radius: 10.436px;
+    }
+
+    .downloadButtonTextFlex {
+        gap: 10px;
+    }
+
+    .mobileDownloadAppBlock {
+        width: 264.2px;
+        height: 444.4px;
+        margin-left: 4rem;
+    }
+
+    .downloadButtonTextFlex p {
+        font-size: 12.844px;
+        line-height: 16.055px;
+    }
+
+    .downloadButtonTextFlex img {
+        width: 19.3px;
+        height: 19.3px;
+    }
+
+    .vectorToDownloadButton {
+        transform: rotate(105deg);
+        left: 23%;
+        top: 43%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .downloadAppBlock {
+        max-width: 100vh;
+        height: 780px;
+    }
+
+    .downloadAppBlockGrid {
+        gap: 30px;
+    }
+
+    .downloadAppBlockText h3{
+        margin: 37px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 34.23px;
+    }
+
+    .downloadAppAdvantages p {
+        font-size: 11.96px;
+        line-height: 17.94px;
+    }
+
+    .downloadButton {
+        max-width: 121.8px;
+        height: 41.2px;
+    }
+
+    .downloadButtonTextFlex p {
+        font-size: 11.824px;
+        line-height: 14.781px;
+    }
+
+    .downloadButtonTextFlex img {
+        width: 17.7px;
+        height: 17.7px;
+    }
+
+    .mobileDownloadAppBlock {
+        width: 220.7px;
+        height: 440.0px;
+        margin-left: 3rem;
+    }
+
+    .vectorToDownloadButton {
+        transform: rotate(120deg);
+        left: 11%;
+        top: 43%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .main {
+        display: flex;
+        width: 100vw;
+        height: 802px;
+        align-items: center;
+    }
+
+    .mainGrid {
+        max-width: 500px;
+        max-height: 550px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+    }
+
+    .mainFlex {
+        align-items: center;
+
+    }
+
+    .mainFlex h1 {
+        font-size: 46.239px;
+        letter-spacing: -1.85px;
+        margin-bottom: 16px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .mainFlex p {
+        font-size: 11.097px;
+        line-height: 17.263px;
+        margin-bottom: 41px;
+        text-align: center;
+    }
+
+    .usersCount {
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    .usersCount p{
+        font-size: 9.248px;
+        letter-spacing: 1.233px;
+        color: var(--color-light-black);
+        opacity: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mainLine {
+        max-width: 33px;
+        background-color: var(--color-light-black);
+        opacity: 1;
+    }
+
+    .trustPilotStars {
+        max-width: 214.4px;
+        height: 23.0px;
+        gap: 6px;
+        padding-top: 23px;
+    }
+
+    .trustPilotStars p {
+        font-size: 11.378px;
+        line-height: 17.067px;
+        margin: 0;
+    }
+
+    .stars {
+        width: 68.1px;
+        height: 10.9px;
+    }
+
+    .trustpilotLogo {
+        width: 87.5px;
+        height: 21.5px;
+    }
+
+    .mainImg {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .mainBludo {
+        max-width: 323px;
+        max-height: 288px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainChickenHell {
+        max-width: 156.0px;
+        max-height: 42.5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainGraph {
+        max-width: 98px;
+        max-height: 97px;
+        width: 100%;
+        height: 100%;
+    }
+}
 
