@@ -1,6 +1,7 @@
 .footer {
     display: flex;
-    width: 1440.0px;
+    max-width: 1440.0px;
+    width: 100%;
     height: 345.0px;
     background: var(--footer-background-color);
     margin: 0 auto;
@@ -9,35 +10,42 @@
 
 .footerContainer {
     display: flex;
-    width: 1247px;
+    max-width: 1247px;
+    width: 100%;
     height: 168px;
     margin: 0 auto;
+    padding: 0 30px 0 30px;
 }
 
 .footerColumn {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .footerLine {
-    width: 1246px;
+    max-width: 1246px;
+    width: 98%;
     height: 1px;
     background-color: var(--color-light-gray);
-    margin-bottom: 35px;
+    margin: 0 auto 30px auto;
 }
 
 .footerRow {
     display: flex;
     flex-direction: row;
-    width: 1247px;
+    max-width: 1247px;
+    width: 100%;
     height: 57px;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
 }
 
 .footerLogo {
+    max-width: 150.7px;
+    height: 57.0px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 11px;
@@ -63,7 +71,8 @@
 .footer-menu-list {
     display: flex;
     flex-direction: row;
-    width: 456.0px;
+    max-width: 456.0px;
+    width: 100%;
     height: 27.0px;
     gap: 70px;
     align-items: center;
@@ -84,17 +93,22 @@
     font-size: 17.829px;
     font-style: normal;
     font-weight: 500;
-    font-weight: 500;
     line-height: 26.743px;
 }
 
 .footerLinks {
     display: flex;
+}
+
+.footerLinksRow {
+    display: flex;
+    max-width: 1247px;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.footerLinks p{
+.footerLinksRow p{
     color: var(--color-dark-gray);
     font-family: var(--second-family);
     font-size: 17px;
@@ -108,4 +122,168 @@
     display: flex;
     flex-direction: row;
     gap: 54px;
+}
+
+@media (max-width: 1024px) {
+
+    .footerContainer {
+        max-width: 887px;
+    }
+
+    .footerLine {
+        max-width: 886px;
+    }
+
+    .footerLogo {
+        max-width: 107.5px;
+        height: 40.5px;
+    }
+
+    .footerLogo img {
+        width: 44px;
+        height: 40px;
+        display: block;
+    }
+
+    .footerLogo p {
+        font-size: 20.284px;
+    }
+
+    .footer-menu-list {
+        gap: 50px;
+    }
+
+    .footer-menu-item-link {
+        font-size: 12.678px;
+        line-height: 19.017px;
+    }
+
+    .footerLinksRow p {
+        font-size: 12.089px;
+        line-height: 17.778px;
+    }
+
+    .footerIcons {
+        gap: 38px;
+    }
+
+    .instLogoFooter {
+        width: 15px;
+        height: 15px;
+    }
+
+    .inLogoFooter {
+        width: 15px;
+        height: 15px;
+    }
+
+    .facebookLogoFooter {
+        width: 7px;
+        height: 15px;
+    }
+
+    .twitterLogoFooter {
+        width: 15px;
+        height: 12px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .footer {
+        max-width: 100vw;
+        height: 426px;
+    }
+
+    .footerContainer {
+        max-width: 314px;
+        height: 335px;
+        position: relative;
+    }
+
+    .footerColumn {
+        max-width: 314px;
+        height: 335px;
+        gap: 30px;
+    }
+
+    .footerRow {
+        flex-direction: column;
+        align-items: start;
+        gap: 53px;
+        max-width: 100px;
+        height: 253px;
+    }
+
+    .footerLine {
+        max-width: 315px;
+        margin: 0 auto;
+    }
+
+    .footerLogo {
+        max-width: 100px;
+        height: 37px;
+    }
+
+    .footerLogo img {
+        width: 40px;
+        height: 37px;
+    }
+
+    .footerLogo p {
+        font-size: 18.738px;
+    }
+
+    .footer-menu-list {
+        max-width: 73px;
+        flex-direction: column;
+        gap: 30px;
+        height: 166px;
+        align-items: start;
+    }
+
+    .footer-menu-item-link {
+        font-size: 14px;
+        line-height: 18.884px;
+        text-transform: uppercase;
+    }
+
+    .footerLinksRow {
+        justify-content: center;
+        height: 20.0px;
+    }
+    
+    .footerLinksRow p {
+        font-size: 13.541px;
+        line-height: 19.914px;
+    }
+
+    .footerIcons {
+        gap: 20px;
+        position: absolute;
+        right: 5%;
+        top: 3%;
+    }
+
+    .instLogoFooter {
+        width: 15px;
+        height: 15px;
+    }
+
+    .inLogoFooter {
+        width: 15px;
+        height: 15px;
+    }
+
+    .facebookLogoFooter {
+        width: 7px;
+        height: 15px;
+    }
+
+    .twitterLogoFooter {
+        width: 15px;
+        height: 12px;
+    }
+
 }
