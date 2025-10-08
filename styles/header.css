@@ -255,6 +255,7 @@
         max-width: 550px;
         height: 35px;
         position: relative;
+        margin: 0;
     }
 
     .burgerMenu {
@@ -275,7 +276,7 @@
 
     .header-menu-list.open {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: column;
         position: fixed;
         right: 0;
         top: 0;
@@ -287,8 +288,13 @@
         z-index: 20;
     }
 
+    .header-menu-item-link {
+        color: var(--purple-color-main);
+    }
+
     .headerLogo {
         width: 112px;
+        margin: 0;
     }
 
     .headerLogo img {
@@ -307,7 +313,7 @@
 
 
     .login-signup {
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -335,10 +341,6 @@
 
     .headerLogo p{
         font-size: 21.176px;
-    }
-
-    .header-menu-list {
-        visibility: hidden;
     }
 
     .header-menu-item-link {
