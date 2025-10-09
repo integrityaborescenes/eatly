@@ -339,16 +339,17 @@
 }
 
 .ourTopRestaurants {
-    width: 1248.9px;
-    height: 641px;
-    margin: 0 auto;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .ourTopRestaurantsFlex {
+    max-width: 1248.9px;
+    width: 100%;
+    height: 641px;
     display: flex;
     flex-direction: column;
     gap: 66px;
+    margin: 0 auto;
 }
 
 .ourTopRestaurantsFlex h3{
@@ -369,7 +370,8 @@
 }
 
 .restaurant {
-    width: 396.0px;
+    max-width: 396.0px;
+    width: 100%;
     height: 297.6px;
     background-color: var(--super-white-color);
     border-radius: 30.023px;
@@ -383,6 +385,25 @@
 .restaurant:hover{
     transform: scale(1.05);
 }
+
+.restaurant1Img {
+    max-width: 396px;
+    height: 177px;
+    width: 100%;
+}
+
+.restaurant2Img {
+    max-width: 397px;
+    height: 177px;
+    width: 100%;
+}
+
+.restaurant3Img {
+    max-width: 397px;
+    height: 177px;
+    width: 100%;
+}
+
 
 .restaurantText {
     display: flex;
@@ -409,7 +430,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65.9px;
+    max-width: 65.9px;
+    width: 100%;
     height: 24.8px;
     border-radius: 5.4px;
     background: var(--color-light-yellow);
@@ -429,7 +451,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65.9px;
+    max-width: 65.9px;
+    width: 100%;
     height: 24.8px;
     border-radius: 5.4px;
     background: var(--color-light-red);
@@ -446,6 +469,9 @@
 }
 
 .infoRestaurant {
+    max-width: 138px;
+    width: 100%;
+    height: 26px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -462,7 +488,16 @@
     line-height: 25.786px;
 }
 
+.infoRestaurantStar {
+    max-width: 26px;
+    height: 27px;
+    width: 100%;
+}
+
 .bookmark {
+    max-width: 41px;
+    width: 100%;
+    height: 41px;
     position: absolute;
     bottom: 5%;
     right: 6%;
@@ -496,16 +531,24 @@
     margin: 0;
 }
 
+.viewAllRestaurantArrowRight {
+    max-width: 19px;
+    width: 100%;
+    height: 19px;
+}
+
 .ourTopDishes {
-    width: 1247.0px;
-    height: 725.0px;
-    margin: 0 auto;
-    padding-top: 100px;
+    margin-top: 50px;
 }
 
 .ourTopDishesFlex  {
     display: flex;
     flex-direction: column;
+    max-width: 1247.0px;
+    width: 100%;
+    height: 725.0px;
+    margin: 0 auto;
+    justify-content: center;
     gap: 65px;
 }
 
@@ -521,14 +564,16 @@
 }
 
 .dishesList {
-    width: 1246.0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1246.0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
 }
 
 .dishes {
     max-width: 224.6px;
+    width: 100%;
     height: 390.4px;
     border-radius: 34.581px;
     border: 1.441px solid #F4F4F6;
@@ -559,15 +604,35 @@
     display: flex;
     flex-direction: column;
     justify-items: start;
-    width: 178.7px;
+    max-width: 178.7px;
+    width: 100%;
     margin-left: 15px;
+}
+
+.foodimage1 {
+    max-width: 202px;
+    width: 100%;
+    height: 210px;
+}
+
+.foodimage2 {
+    max-width: 202px;
+    width: 100%;
+    height: 210px;
+}
+
+.foodimage3 {
+    max-width: 202px;
+    width: 100%;
+    height: 210px;
 }
 
 .highlightDishes1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 58.9px;
+    max-width: 58.9px;
+    width: 100%;
     height: 22.2px;
     border-radius: 4.828px;
     background: var(--color-light-yellow);
@@ -587,7 +652,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 58.9px;
+    max-width: 58.9px;
+    width: 100%;
     height: 22.2px;
     border-radius: 4.828px;
     background: var(--color-light-red);
@@ -606,7 +672,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 58.9px;
+    max-width: 58.9px;
+    width: 100%;
     height: 22.2px;
     border-radius: 4.828px;
     background-color: var(--color-light-green);
@@ -620,7 +687,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    z-index: 10;
 }
 
 .infoDishes {
@@ -655,6 +721,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 40.345px;
+}
+
+.costDishesButton {
+    max-width: 43.8px;
+    width: 100%;
+    height: 39.7px;
 }
 
 .heartIcon{
@@ -1298,12 +1370,17 @@
     letter-spacing: 0.443px;
 }
 
-.lineMain {
+.lineMainCenter {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 1248px;
+}
+
+.lineMain {
+    max-width: 1248px;
+    width: 95%;
     height: 1px;
+    margin-top: 24px;
     background-color: var(--color-light-gray);
 }
 
@@ -1482,6 +1559,235 @@
         right: 19%;
         bottom: -4%;
     }
+
+    .ourTopRestaurants {
+        margin-top: 70px;
+    }
+
+    .ourTopRestaurantsFlex {
+        gap: 60px;
+        max-width: 888px;
+        height: 450px;
+    }
+
+    .ourTopRestaurantsFlex h3 {
+        font-size: 32px;
+        line-height: 18.175px;
+    }
+
+    .restaurantGrid {
+        gap: 21px;
+    }
+
+    .restaurant {
+        max-width: 281.6px;
+        height: 211.6px;
+        width: 100%;
+    }
+
+    .restaurant1Img {
+        max-width: 281.6px;
+        height: 125.2px;
+        width: 100%;
+    }
+
+    .restaurant2Img {
+        max-width: 281.6px;
+        height: 125.2px;
+        width: 100%;
+    }
+
+    .restaurant3Img {
+        max-width: 281.6px;
+        height: 125.2px;
+        width: 100%;
+    }
+
+    .restaurantText {
+        margin-left: 24px;
+        margin-top: 7px;
+    }
+
+    .restaurant h4 {
+        font-size: 18.337px;
+        line-height: 29.798px;
+    }
+
+    .highlightRestaurant1 {
+        max-width: 46.8px;
+        height: 17.7px;
+
+    }
+
+    .highlightRestaurant1 p {
+        font-size: 9.085px;
+    }
+
+    .highlightRestaurant2 {
+        max-width: 52.7px;
+        height: 17.3px;
+    }
+
+    .highlightRestaurant2 p {
+        font-size: 9.085px;
+    }
+
+    .infoRestaurant {
+        gap: 4.5px;
+    }
+
+    .infoRestaurant p {
+        font-size: 13.753px;
+        line-height: 18.337px;
+    }
+
+    .infoRestaurantStar {
+        max-width: 18.3px;
+        height: 18.3px;
+    }
+
+    .bookmark {
+        max-width: 28.5px;
+        height: 28.5px;
+
+    }
+
+    .viewAllRestaurantsFlex {
+        gap: 13px;
+    }
+
+    .viewAllRestaurants p {
+        font-size: 14.222px;
+        line-height: 32.131px;
+        letter-spacing: -0.071px;
+    }
+
+    .viewAllRestaurantArrowRight {
+        max-width: 11px;
+        height: 11px;
+    }
+
+    .ourTopDishesFlex {
+        max-width: 886.8px;
+        height: 515.6px;
+        gap: 53px;
+    }
+
+    .ourTopDishesFlex h3{
+        font-size: 32px;
+        line-height: 18.175px;
+    }
+
+    .dishesList {
+        max-width: 886.8px;
+        height: 278px;
+        gap: 21px;
+    }
+
+    .dishes {
+        max-width: 159.7px;
+        height: 277.6px;
+        border: 1.025px solid #F4F4F6;
+        box-shadow: 4.87px 58.44px 29.22px 0 rgba(229, 229, 229, 0.70);
+    }
+
+    .dishesFlex {
+        align-items: center;
+    }
+
+    .dishes h4 {
+        font-size: 16.394px;
+        line-height: 26.64px;
+    }
+
+    .dishesText {
+        max-width: 127px;
+        margin-left: 0;
+    }
+
+    .highlightDishes1 {
+        max-width: 41.9px;
+        height: 15.8px;
+    }
+
+    .highlightDishes1 p{
+        font-size: 8.122px;
+        line-height: normal;
+    }
+
+    .highlightDishes2 {
+        max-width: 45.8px;
+        height: 15.6px;
+    }
+
+    .highlightDishes2 p {
+        font-size: 8.122px;
+    }
+
+    .highlightDishes3 {
+        max-width: 45.8px;
+        height: 15.6px;
+    }
+
+    .highlightDishes3 p {
+        font-size: 8.122px;
+        line-height: normal;
+    }
+
+    .infoDishes {
+        gap: 4px;
+    }
+
+    .infoDishes p {
+        font-size: 12.296px;
+        line-height: 16.394px;
+    }
+
+    .foodimage1 {
+        max-width: 131.3px;
+        height: 132.3px;
+    }
+
+    .foodimage2 {
+        max-width: 131.5px;
+        height: 131.5px;
+    }
+
+    .foodimage3 {
+        max-width: 131.3px;
+        height: 132.3px;
+    }
+
+    .costDishes {
+        gap: 35px;
+    }
+
+    .costDishes p {
+        font-size: 18.44px;
+        line-height: 28.69px;
+    }
+
+    .costDishesButton {
+        max-width: 31.2px;
+        height: 28.2px;
+    }
+
+    .heartIcon {
+        max-width: 15.6px;
+        width: 100%;
+        height: 12.9px;
+    }
+
+    .viewAllDishesFlex {
+        gap: 14px;
+    }
+
+    .viewAllDishes p {
+        font-size: 14.222px;
+        line-height: 32.131px;
+        letter-spacing: -0.071px;
+    }
+
 }
 
 @media (max-width: 710px) {
@@ -1644,6 +1950,250 @@
         left: 23%;
         top: 43%;
     }
+
+    .ourTopRestaurants {
+        margin-top: 84px;
+    }
+
+    .ourTopRestaurantsFlex {
+        gap: 35px;
+        max-width: 600px;
+        height: 1029px;
+    }
+
+    .ourTopRestaurantsFlex h3 {
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .restaurantGrid {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .restaurant {
+        max-width: 315.0px;
+        height: 236.7px;
+    }
+
+    .restaurant1Img {
+        max-width: 315.0px;
+        height: 140.1px;
+
+    }
+
+    .restaurant2Img {
+        max-width: 315.0px;
+        height: 140.1px;
+    }
+
+    .restaurant3Img {
+        max-width: 315.0px;
+        height: 140.1px;
+    }
+
+    .restaurantText {
+        margin-left: 26px;
+        margin-top: 8.7px;
+    }
+
+    .restaurant h4 {
+        font-size: 20.512px;
+        line-height: 33.333px;
+    }
+
+    .highlightRestaurant1 {
+        max-width: 52.4px;
+        height: 19.8px;
+    }
+
+    .highlightRestaurant1 p {
+        font-size: 10.163px;
+    }
+
+    .highlightRestaurant2 {
+        max-width: 58.9px;
+        height: 19.3px;
+    }
+
+    .highlightRestaurant2 p {
+        font-size: 10.163px;
+    }
+
+    .infoRestaurant {
+        gap: 5px;
+    }
+
+    .infoRestaurant p {
+        font-size: 15.384px;
+        line-height: 20.512px;;
+    }
+
+    .infoRestaurantStar {
+        max-width: 20px;
+        height: 20px;
+    }
+
+    .bookmark {
+        max-width: 31.9px;
+        height: 31.9px;
+    }
+
+    .viewAllRestaurants {
+        justify-content: center;
+    }
+
+    .viewAllRestaurantsFlex {
+        gap: 20px;
+    }
+
+    .viewAllRestaurants p {
+        font-size: 20px;
+        line-height: 45.184px;
+        letter-spacing: -0.1px;
+    }
+
+    .viewAllRestaurantArrowRight {
+        max-width: 15px;
+        height: 15px;
+    }
+
+    .ourTopDishes {
+        margin-top: 0px;
+    }
+
+    .ourTopDishesFlex {
+        max-width: 500px;
+        height: 858.0px;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .ourTopDishesFlex h3{
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .dishesList {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto ;
+        justify-items: center;
+        max-width: 400px;
+        height: 552px;
+        gap: 21px;
+    }
+
+    .dsh5 {
+        display: none;
+    }
+
+    .dishes {
+        max-width: 146.9px;
+        height: 255.3px;
+        border: 0.942px solid #F4F4F6;
+        box-shadow: 4.479px 53.754px 26.877px 0 rgba(229, 229, 229, 0.70);
+    }
+
+    .dishes h4 {
+        font-size: 15.08px;
+        line-height: 24.504px;
+    }
+
+    .dishesText {
+        max-width: 114px;
+        margin-left: 0;
+    }
+
+    .highlightDishes1 {
+        max-width: 38.5px;
+        height: 14.5px;
+        border-radius: 3.158px;
+    }
+
+    .highlightDishes1 p{
+        font-size: 7.471px;
+        line-height: normal;
+    }
+
+    .highlightDishes2 {
+        max-width: 42.1px;
+        height: 14.3px;
+        border-radius: 3.158px;
+    }
+
+    .highlightDishes2 p {
+        font-size: 7.471px;
+        line-height: normal;
+    }
+
+    .highlightDishes3 {
+        max-width: 42.1px;
+        height: 14.3px;
+        border-radius: 3.158px;
+    }
+
+    .highlightDishes3 p {
+        font-size: 7.471px;
+        line-height: normal;
+    }
+
+
+    .infoDishes p {
+        font-size: 11.31px;
+        line-height: 15.08px;
+    }
+
+    .foodimage1 {
+        max-width: 120.9px;
+        height: 120.9px;
+    }
+
+    .foodimage2 {
+        max-width: 120.9px;
+        height: 120.9px;
+    }
+
+    .foodimage3 {
+        max-width: 120.9px;
+        height: 120.9px;
+    }
+
+    .costDishes {
+        gap: 30px;
+    }
+
+    .costDishes p {
+        font-size: 17px;
+        line-height: 26.389px;
+    }
+
+    .costDishesButton {
+        max-width: 28.7px;
+        height: 26.0px;
+    }
+
+    .heartIcon {
+        max-width: 14.4px;
+        height: 11.9px;
+    }
+
+    .viewAllDishes {
+        justify-content: center;
+    }
+
+    .viewAllDishesFlex {
+        gap: 20px;
+    }
+
+    .viewAllDishes p {
+        font-size: 20px;
+        line-height: 45.184px;
+        letter-spacing: -0.1px;
+    }
+
 }
 
 @media (max-width: 550px) {
