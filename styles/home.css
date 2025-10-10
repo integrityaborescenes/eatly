@@ -799,7 +799,8 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    width: 570.7px;
+    max-width: 570.7px;
+    width: 100%;
     height: 460.0px;
 }
 
@@ -822,11 +823,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 217.3px;
-    height: 80.1px;
     gap: 20px;
     position: relative;
-    width: 345.2px;
+    max-width: 345.2px;
+    width: 100%;
     height: 88.3px;
     flex-shrink: 0;
     border-radius: 12.041px;
@@ -863,10 +863,30 @@
 }
 
 .purchasesLine {
-    width: 1248px;
+    max-width: 1248px;
+    width: 100%;
     height: 1px;
     margin-top: 24px;
     background-color: var(--color-light-gray);
+}
+
+.foodimage1Purcashes {
+    max-width: 77.3px;
+    height: 80.1px;
+    width: 100%;
+}
+
+
+.foodimage2Purcashes {
+    max-width: 72.2px;
+    height: 72.2px;
+    width: 100%;
+}
+
+.foodimage3Purcashes {
+    max-width: 72.2px;
+    height: 73.2px;
+    height: 100%;
 }
 
 .menuDate {
@@ -885,7 +905,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 534.0px;
+    max-width: 534.0px;
+    width: 100%;
     height: 466.5px;
     border-radius: 25.129px;
     border: 1.571px solid  #EDF2F7;
@@ -942,7 +963,8 @@
 .dashboardCard {
     display: flex;
     flex-direction: column;
-    width: 458.6px;
+    max-width: 458.6px;
+    width: 100%;
     height: 135.1px;
     border-radius: 18.847px;
     border: 1.571px solid  #EDF2F7;
@@ -961,6 +983,9 @@
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    max-width: 408px;
+    width: 100%;
+    height: 55px;
 }
 
 .dashboardCardFlex h5{
@@ -976,7 +1001,8 @@
 }
 
 .expenceColumn {
-    width: 241.0px;
+    max-width: 241.0px;
+    width: 100%;
     height: 55.1px;
     display: flex;
     flex-direction: column;
@@ -1003,7 +1029,8 @@
 
 .dashboardLinePurpleBack {
     position: relative;
-    width: 408.4px;
+    max-width: 408.4px;
+    width: 100%;
     height: 9.4px;
     border-radius: 78.529px;
     background: var(--purple-color-light);
@@ -1015,7 +1042,8 @@
     left: 0;
     top: 0;
     z-index: 10;
-    width: 296.8px;
+    max-width: 296.8px;
+    width: 100%;
     height: 9.4px;
     border-radius: 78.529px;
     background: var(--purple-color-main);
@@ -1025,7 +1053,8 @@
 
 .dashboardLineYellowBack {
     position: relative;
-    width: 408.4px;
+    max-width: 408.4px;
+    width: 100%;
     height: 9.4px;
     border-radius: 78.529px;
     background: var(--color-light-yellow);
@@ -1037,13 +1066,17 @@
     left: 0;
     top: 0;
     z-index: 10;
-    width: 296.8px;
+    max-width: 296.8px;
+    width: 100%;
     height: 9.4px;
     border-radius: 78.529px;
     background: var(--color-dark-yellow);
     animation: fillLineYellow 1.5s ease-out forwards;
 }
 
+.vectorToDashboard {
+    display: none;
+}
 
 @keyframes fillLinePurple {
     from {
@@ -1788,7 +1821,185 @@
         letter-spacing: -0.071px;
     }
 
+    .purchasesControl {
+        max-width: 888.9px;
+        height: 427.4px;
+        gap: 105px;
+    }
+
+    .purchasesTextFlex {
+        gap: 34px;
+        max-width: 400.9px;
+        height: 327.1px;
+    }
+
+    .purchasesTextFlex h3 {
+        font-size: 36.212px;
+        line-height: 41.385px;
+    }
+
+    .purchasesMenuList {
+        gap: 10px;
+    }
+
+    .purchasesMenuItem {
+        gap: 13px;
+        max-width: 245.5px;
+        height: 62.8px;
+        border-radius: 8.562px;
+    }
+
+    .purchasesMenuItem img {
+        padding-left: 12px;
+    }
+
+    .purchasesMenuItemColumn {
+        gap: 3px;
+    }
+
+    .purchasesMenuItemColumn h4{
+        font-size: 13.557px;
+        line-height: 140%;
+    }
+
+    .purchasesMenuItemColumn h5 {
+        font-size: 8.562px;
+        line-height: 140%;
+    }
+
+    .foodimage1Purcashes {
+        max-width: 54.9px;
+        width: 100%;
+        height: 56.9px;
+    }
+
+    .foodimage2Purcashes {
+        max-width: 51.4px;
+        height: 51.4px;
+        width: 100%;
+    }
+
+    .foodimage3Purcashes {
+        max-width: 51.4px;
+        width: 100%;
+        height: 52.1px;
+    }
+
+    .menuDate {
+        font-size: 9.276px;
+        line-height: 140%;
+    }
+
+    .purchasesDashboard {
+        max-width: 379.7px;
+        height: 331.7px;
+        width: 100%;
+        border-radius: 17.87px;
+        border: 1.117px solid #EDF2F7;
+    }
+
+    .dashboardFlex {
+        gap: 15px;
+    }
+
+    .dashboardTextAndDate {
+        gap: 80px;
+    }
+
+    .dashboardTextAndDate h4{
+        font-size: 20.104px;
+        line-height: 135%;
+        letter-spacing: 0.223px;
+    }
+
+    .dashboardTextAndDate p{
+        font-size: 13.402px;
+        line-height: 150%;
+        letter-spacing: 0.447px;
+    }
+
+    .dateBox {
+        max-width: 125.1px;
+        height: 38.0px;
+        padding: 8.935px 13.402px;
+        gap: 4.467px;
+        border-radius: 8.935px;
+    }
+
+    .dashboardCard {
+        max-width: 326.1px;
+        height: 96.1px;
+    }
+
+    .dashboardColumn {
+        gap: 15px;
+    }
+
+    .dashboardCardFlex {
+        gap: 13px;
+        max-width: 290.4px;
+        height: 39.2px;
+    }
+
+    .dashboardCardFlex h5{
+        font-size: 15.636px;
+        line-height: 150%;
+        letter-spacing: 0.223px;
+    }
+
+    .expenceColumn {
+        max-width: 162px;
+        height: 40px;
+    }
+
+    .expenceColumn h4 {
+        font-size: 13.402px;
+        line-height: 150%;
+        letter-spacing: 0.447px;
+    }
+
+    .expenceColumn p {
+        font-size: 11.169px;
+        line-height: 150%;
+        letter-spacing: 0.447px;
+    }
+
+    .dashboardLinePurpleBack {
+        max-width: 290.4px;
+        height: 6.7px;
+        border-radius: 55.843px;
+    }
+
+    .dashboardLinePurple {
+        max-width: 211.1px;
+        height: 6.7px;
+        border-radius: 55.843px;
+    }
+
+    .dashboardLineYellowBack {
+        max-width: 290.4px;
+        height: 6.7px;
+        border-radius: 55.843px;
+    }
+
+    .dashboardLineYellow {
+        max-width: 174.2px;
+        height: 6.7px;
+        border-radius: 55.843px;
+    }
+
+    .dateBoxVectorDown {
+        max-width: 8.9px;
+        height: 4.5px;
+    }
+
+    .dashboardCardFlex img{
+        max-width: 35.7px;
+        height: 35.7px;
+        width: 100%;
+    }
 }
+
 
 @media (max-width: 710px) {
     .main {
@@ -2193,6 +2404,192 @@
         line-height: 45.184px;
         letter-spacing: -0.1px;
     }
+
+    .purchasesControlBlock {
+        display: flex;
+        align-items: center;
+    }
+
+    .purchasesControl {
+        max-width: 375.0px;
+        height: 670.0px;
+        gap: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+
+    .purchasesTextFlex {
+        max-width: 316.2px;
+        height: 287.4px;
+        gap: 26px;
+    }
+
+    .purchasesTextFlex h3 {
+        font-size: 30px;
+        line-height: 32.641px;
+    }
+
+    .purchasesMenuList {
+        gap: 9.94px;
+    }
+
+    .purchasesMenuItem {
+        gap: 13px;
+        max-width: 228.0px;
+        height: 58.3px;
+        border-radius: 7.953px;
+    }
+
+
+    .purchasesMenuItemColumn h4{
+        font-size: 12.593px;
+        line-height: 140%;
+    }
+
+    .purchasesMenuItemColumn h5 {
+        font-size: 7.953px;
+        line-height: 140%;
+    }
+
+    .foodimage1Purcashes {
+        max-width: 51.0px;
+        height: 52.9px;
+        width: 100%;
+    }
+
+    .foodimage2Purcashes {
+        max-width: 47.7px;
+        height: 47.7px;
+        width: 100%;
+    }
+
+    .foodimage3Purcashes {
+        max-width: 47.7px;
+        height: 48.4px;
+        width: 100%;
+    }
+
+    .menuDate {
+        font-size: 8.616px;
+        line-height: 140%;
+    }
+
+    .purchasesDashboard {
+        max-width: 316.3px;
+        height: 276.3px;
+        border-radius: 14.886px;
+        border: 0.93px solid #EDF2F7;
+    }
+
+    .dashboardFlex {
+        gap: 13px;
+    }
+
+    .dashboardTextAndDate {
+        gap: 70px;
+    }
+
+    .dashboardTextAndDate h4{
+        font-size: 16.747px;
+        line-height: 135%;
+        letter-spacing: 0.186px;
+    }
+
+    .dashboardTextAndDate p{
+        font-size: 11.164px;
+        line-height: 150%;
+        letter-spacing: 0.372px;
+    }
+
+    .dateBox {
+        max-width: 104.2px;
+        height: 31.6px;
+        padding: 7.443px 11.164px;
+        gap: 3.721px;
+        border-radius: 7.443px;
+    }
+
+    .dashboardCard {
+        max-width: 271.7px;
+        height: 80.0px;
+    }
+
+    .dashboardColumn {
+        gap: 12px;
+    }
+
+    .dashboardCardFlex {
+        gap: 11px;
+        max-width: 241.9px;
+        height: 32.9px;
+    }
+
+    .dashboardCardFlex h5{
+        font-size: 13.025px;
+        line-height: 150%;
+        letter-spacing: 0.186px;
+    }
+
+    .expenceColumn {
+        max-width: 136px;
+        height: 33px;
+    }
+
+    .expenceColumn h4 {
+        font-size: 11.164px;
+        line-height: 150%;
+        letter-spacing: 0.372px;
+    }
+
+    .expenceColumn p {
+        font-size: 9.304px;
+        line-height: 150%;
+        letter-spacing: 0.372px;
+    }
+
+    .dashboardLinePurpleBack {
+        max-width: 241.9px;
+        height: 5.6px;
+        border-radius: 46.518px;
+    }
+
+    .dashboardLinePurple {
+        max-width: 175.8px;
+        height: 5.6px;
+        border-radius: 46.518px;
+    }
+
+    .dashboardLineYellowBack {
+        max-width: 241.9px;
+        height: 5.6px;
+        border-radius: 46.518px;
+    }
+
+    .dashboardLineYellow {
+        max-width: 145.1px;
+        height: 5.6px;
+        border-radius: 46.518px;
+    }
+
+    .dateBoxVectorDown {
+        max-width: 7.4px;
+        height: 3.7px;
+    }
+
+    .dashboardCardFlex img{
+        max-width: 29.8px;
+        height: 29.8px;
+    }
+
+    .vectorToDashboard {
+        display: flex;
+        position: absolute;
+        top: 40%;
+        right: 0;
+    }
+
 
 }
 
