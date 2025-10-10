@@ -1,0 +1,528 @@
+.menuSearchBlock {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1247px;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+}
+
+.menuSearchContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 1247px;
+    width: 100%;
+    height: 623px;
+    gap: 112px;
+}
+
+.menuSearchLeftBlock {
+    max-width: 758px;
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+
+.menuNewsEffect {
+    position: absolute;
+    right: -7%;
+    top: -6%;
+    z-index: 10;
+}
+
+.menuSearchLeftBlockColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
+.menuNewsSlider {
+    display: flex;
+    flex-direction: column;
+    max-width: 758px;
+    width: 100%;
+    height: 306px;
+    position: relative;
+    gap: 51px;
+    align-items: center;
+}
+
+.menuNewsBanner {
+    max-width: 758.0px;
+    width: 100%;
+    height: 251.0px;
+    display: flex;
+    background-image: url("/images/menuSliderBannerBg.svg");
+    align-items: center;
+    justify-content: center;
+}
+
+.menuNewsBannerText {
+    max-width: 641px;
+    height: 181px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.menuNewsBannerText h3{
+    color: var(--white-color);
+    font-family: var(--font-family);
+    font-size: 74.996px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.menuNewsBannerText h4{
+    color: #7C6FCD;
+    font-family: var(--font-family);
+    font-size: 87.419px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.menuNewsBannerFoodImg {
+    max-width: 254.3px;
+    height: 256.1px;
+    width: 100%;
+    position: absolute;
+    right: 6%;
+    bottom: -3%;
+}
+
+.menuNewsSliderLines {
+    max-width: 136px;
+    height: 6px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.menuNewsSliderLine1 {
+    max-width: 61.1px;
+    width: 100%;
+    height: 5.8px;
+    border-radius: 55.504px;
+    background-color: var(--purple-color-main);
+}
+
+.menuNewsSliderLine2 {
+    max-width: 29.9px;
+    height: 5.8px;
+    width: 100%;
+    border-radius: 55.504px;
+    background-color: var(--color-light-gray);
+}
+
+.menuNewsSliderLine3 {
+    max-width: 29.9px;
+    height: 5.8px;
+    width: 100%;
+    border-radius: 55.504px;
+    background-color: var(--color-light-gray);
+}
+
+.menuSearch {
+    display: flex;
+    flex-direction: column;
+    max-width: 757.0px;
+    height: 185.1px;
+    width: 100%;
+    gap: 35px;
+}
+
+.searchInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+    max-width: 757.0px;
+    height: 75.0px;
+    width: 100%;
+    border-radius: 18.693px;
+    background-color: var(--color-gray-w-opacity);
+}
+
+.searchInput input{
+    max-width: 637px;
+    height: 24px;
+    width: 100%;
+    color: #AAABBA;
+    font-family: var(--font-family);
+    font-size: 20.544px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117.5%;
+    letter-spacing: -0.411px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.menuSearchIco {
+    max-width: 35px;
+    height: 35px;
+    width: 100%;
+}
+
+.menuSelector {
+    display: flex;
+    flex-direction: row;
+    max-width: 756.9px;
+    height: 75.0px;
+    width: 100%;
+}
+
+.selectFood {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 377.4px;
+    height: 75.0px;
+    width: 100%;
+    border-radius: 15.138px 0 0 15.138px;
+    border: 2.171px solid var(--purple-color-main);
+    background: var(--white-color);
+    box-shadow: 0 21.785px 48.411px 0 rgba(211, 209, 216, 0.25);
+    cursor: pointer;
+}
+
+.selectFood p{
+    color: var(--purple-color-main);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 19.463px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.selectRestaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 379.5px;
+    height: 75.0px;
+    width: 100%;
+    border-radius: 0 15.138px 15.138px 0;
+    border: 2.171px solid var(--purple-color-main);
+    background: var(--purple-color-main);
+    box-shadow: 0 21.785px 48.411px 0 rgba(211, 209, 216, 0.25);
+    cursor: pointer;
+}
+
+.selectRestaurant p{
+    flex-shrink: 0;
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 19.463px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.menuSearchRightBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 377.0px;
+    width: 100%;
+    height: 591.0px;
+    border-radius: 23.801px;
+    background: var(--super-white-color);
+    box-shadow: 5.712px 9.52px 28.561px 0.952px rgba(108, 95, 188, 0.12);
+}
+
+.menuFilter {
+    display: flex;
+    justify-content: center;
+    max-width: 309px;
+    width: 100%;
+    height: 520px;
+}
+
+.menuFilterContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 309px;
+    width: 100%;
+    height: 520px;
+    gap: 25px;
+}
+
+.foodCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.foodCategory h3{
+    color: var(--purple-color-superdark);
+    font-family: var(--font-family);
+    font-size: 21.452px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.886px;
+}
+
+.foodCategorysSelect {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+ }
+
+.foodCategoryPizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    max-width: 66.2px;
+    height: 96.4px;
+    width: 100%;
+    filter: drop-shadow(0 14.71px 22.065px rgba(135, 125, 200, 0.25));
+    background-color: var(--color-light-yellow);
+    border-radius: 18.693px;
+}
+
+.foodCategoryPizza p{
+    color: var(--color-dark-yellow);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 11.768px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.foodCategoryPizzaImg {
+    max-width: 36px;
+    width: 100%;
+    height: 36px;
+}
+
+.foodCategoryAsian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    max-width: 66.2px;
+    height: 96.4px;
+    width: 100%;
+    filter: drop-shadow(0 14.71px 22.065px rgba(135, 125, 200, 0.25));
+    background-color: var(--color-light-red);
+    border-radius: 18.693px;
+}
+
+.foodCategoryAsian p{
+    color: var( --color-dark-red);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 11.768px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.foodCategoryHotDogImg {
+    max-width: 36px;
+    width: 100%;
+    height: 36px;
+}
+
+.foodCategoryDonat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    max-width: 66.2px;
+    height: 96.4px;
+    width: 100%;
+    filter: drop-shadow(0 14.71px 22.065px rgba(135, 125, 200, 0.25));
+    background-color: #EDB66B66;
+    border-radius: 18.693px;
+}
+
+.foodCategoryDonat p{
+    color: #E28B14;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 11.768px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.foodCategoryDonatImg {
+    max-width: 36px;
+    width: 100%;
+    height: 36px;
+}
+
+.foodCategoryIce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    max-width: 66.2px;
+    height: 96.4px;
+    width: 100%;
+    filter: drop-shadow(0 14.71px 22.065px rgba(135, 125, 200, 0.25));
+    background-color: #5A85FF66;
+    border-radius: 18.693px;
+}
+
+.foodCategoryIce p{
+    color: #002073;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 11.768px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.foodCategoryIceImg {
+    max-width: 36px;
+    width: 100%;
+    height: 36px;
+}
+
+.sortBy {
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    width: 100%;
+    height: 110px;
+    gap: 13px;
+}
+
+.sortBy h3{
+    color: var(--purple-color-superdark);
+    font-family: var(--font-family);
+    font-size: 21.455px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28.89px;
+}
+
+.sortByCategory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 9px;
+    cursor: pointer;
+}
+
+.sortByCategory p {
+    max-width: 105px;
+    width: 100%;
+    height: 29px;
+    color: var(--color-light-gray);
+    font-family: var(--font-family);
+    font-size: 15.448px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.89px;
+}
+
+.priceSelector {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    max-width: 303px;
+    width: 100%;
+    height: 104px;
+}
+
+.priceSelector h3{
+    color: var(--purple-color-superdark);
+    font-family: var(--font-family);
+    font-size: 22.003px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29.629px;
+}
+
+.priceSelectorSlider {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.priceSelectorSliderLine {
+    max-width: 300px;
+    width: 100%;
+    height: 5px;
+    border-radius: 8.801px;
+    border: 0.88px solid var(--purple-color-main);
+    background: var(--purple-color-main);
+    position: relative;
+}
+
+.priceSelectorSliderDot {
+    max-width: 19px;
+    width: 100%;
+    height: 19px;
+    background: var(--purple-color-main);
+    position: absolute;
+    border-radius: 30px;
+    border: 4px solid #BBB6D7;
+    left: 0;
+    bottom: -250%;
+    cursor: pointer;
+}
+
+.selectorPrices {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+    justify-content: center;
+}
+
+.selectorPrices p{
+    color: var(--color-light-gray);
+    font-family: var(--font-family);
+    font-size: 10.562px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.629px;
+}
+
+.filterButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 313.0px;
+    height: 60.1px;
+    width: 100%;
+    border-radius: 13.648px;
+    background-color: var(--purple-color-main);
+}
+
+.filterButton button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.filterButton button p {
+    text-align: center;
+    color: var(--super-white-color);
+    font-family: var(--font-family);
+    font-size: 13.729px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.137px;
+    margin: 0;
+}
+
+
+
