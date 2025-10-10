@@ -1111,6 +1111,7 @@
     gap: 80px;
     max-width: 1356.0px;
     height: 487.0px;
+    width: 100%;
 }
 
 .customerSayColumn h3{
@@ -1322,6 +1323,9 @@
 }
 
 .foodImageSubscribe {
+    max-width: 274.1px;
+    height: 276.0px;
+    width: 100%;
     position: absolute;
     right: 5%;
     bottom: 0;
@@ -1416,6 +1420,272 @@
     margin-top: 24px;
     background-color: var(--color-light-gray);
 }
+
+@media (max-width: 1300px){
+    .customerSayColumn {
+        gap: 56px;
+        max-width: 898px;
+        height: 346.3px;
+    }
+
+    .customerSayColumn h3{
+        font-size: 32px;
+        line-height: 18.175px;
+    }
+
+    .customerSayRow {
+        gap: 32px;
+    }
+
+    .firstReview {
+        max-width: 375.5px;
+        height: 246.0px;
+        width: 100%;
+    }
+
+    .firstReviewContainer {
+        max-width: 314px;
+        height: 192px;
+        gap: 22px;
+    }
+
+    .reviewInfo {
+        gap: 15px;
+    }
+
+    .reviewInfoText {
+        max-width: 182px;
+        height: 42px;
+    }
+
+    .reviewInfoText h4 {
+        font-size: 14.858px;
+        line-height: 22.286px;
+    }
+
+    .reviewInfoText p {
+        font-size: 11.886px;
+        line-height: 18.572px;
+    }
+
+    .reviewAvata {
+        max-width: 50.5px;
+        height: 50.5px;
+        width: 100%;
+    }
+
+    .kovichki {
+        max-width: 41.7px;
+        height: 31.5px;
+        width: 100%;
+    }
+
+    .reviewCitata p{
+        font-size: 12.8px;
+        line-height: 18.572px;
+    }
+
+    .reviewRating {
+        gap: 4px;
+    }
+
+    .starYellow {
+        max-width: 16.4px;
+        height: 16.4px;
+        width: 100%;
+    }
+
+    .anotherReviews {
+        width: 556px;
+        display: flex;
+        justify-content: start;
+        overflow: hidden;
+        max-width: 200%;
+    }
+
+    .anotherReviewsContainer {
+        gap: 62px;
+    }
+
+    .anotherReviewBlock {
+        gap: 32px;
+    }
+
+    .reviewRating {
+        width: 314px;
+    }
+
+    .anotherReviewBlock {
+        align-items: start;
+    }
+
+    .anotherReviewBlockColumns {
+        gap: 22px;
+        width: 375.5px;
+        height: 170.0px;
+    }
+
+    .anotherReviewBlockColumns2 {
+        gap: 22px;
+        width: 375.5px;
+        height: 170.0px;
+    }
+
+    .anotherReviewBlockColumns3 {
+        gap: 22px;
+        width: 375.5px;
+        height: 170.0px;
+    }
+
+    .anotherReviewBlockColumns4 {
+        gap: 22px;
+        width: 375.5px;
+        height: 170.0px;
+    }
+
+    .sliderLineBack {
+        max-width: 450px;
+        height: 7.8px;
+        border-radius: 35.556px;
+    }
+
+    .sliderLine {
+        width: 50px;
+        height: 7.8px;
+        border-radius: 35.556px;
+    }
+}
+
+@media (max-width: 810px) {
+    .customerSayColumn {
+        gap: 56px;
+        max-width: 342px;
+        height: 500px;
+    }
+
+    .customerSayColumn h3{
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .customerSayRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstReview {
+        max-width: 314.6px;
+        height: 206.2px;
+        width: 100%;
+    }
+
+    .firstReviewContainer {
+        max-width: 263px;
+        height: 160px;
+        gap: 19px;
+    }
+
+    .reviewInfo {
+        gap: 12px;
+    }
+
+    .reviewInfoText {
+        max-width: 153px;
+        height: 35px;
+    }
+
+    .reviewInfoText h4 {
+        font-size: 12.449px;
+        line-height: 18.673px;
+    }
+
+    .reviewInfoText p {
+        font-size: 9.959px;
+        line-height: 15.561px;
+    }
+
+    .reviewAvata {
+        max-width: 42.3px;
+        height: 42.3px;
+    }
+
+    .kovichki {
+        max-width: 35.0px;
+        height: 26.4px;
+
+    }
+
+    .reviewCitata p{
+        font-size: 10.725px;
+        line-height: 15.561px;
+    }
+
+    .reviewRating {
+        gap: 3px;
+    }
+
+    .starYellow {
+        max-width: 13.7px;
+        height: 13.7px;
+    }
+
+    .anotherReviews {
+        width: 314.6px;
+    }
+
+    .anotherReviewsContainer {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .anotherReviewBlock {
+        gap: 25px;
+    }
+
+    .reviewRating {
+        width: 260px;
+    }
+
+    .anotherReviewBlock {
+        align-items: center;
+    }
+
+    .anotherReviewBlockColumns {
+        gap: 22px;
+        width: 314.5px;
+    }
+
+    .anotherReviewBlockColumns2 {
+        gap: 22px;
+        width: 314.5px;
+    }
+
+    .anotherReviewBlockColumns3 {
+        gap: 22px;
+        width: 314.5px;
+    }
+
+    .anotherReviewBlockColumns4 {
+        gap: 22px;
+        width: 314.5px;
+    }
+
+    .sliderLineBack {
+        margin-left: 8px;
+        max-width: 300.0px;
+        height: 4.9px;
+        border-radius: 22.489px;
+    }
+
+    .sliderLine {
+        width: 35px;
+        height: 4.9px;
+        border-radius: 23px;
+    }
+}
+
+
 
 @media (max-width: 1080px) {
     .mainGrid {
@@ -1998,6 +2268,63 @@
         height: 35.7px;
         width: 100%;
     }
+
+    .subscribe {
+        max-width: 863.3px;
+        height: 241.8px;
+        margin: 130px auto 130px auto;
+    }
+
+    .foodImageSubscribe {
+       max-width: 194.9px;
+        height: 196.3px;
+    }
+
+    .subscribeToSaleBlock {
+        max-width: 863.3px;
+        height: 199.1px;
+        background-image: url("/images/subscribeToSaleBG2.svg");
+    }
+
+    .subscribeColumn {
+        margin-left: 46px;
+        gap: 2px;
+    }
+
+    .subscribeText h3 {
+        font-size: 49.778px;
+        line-height: normal;
+    }
+
+    .subscribeInputAndButton {
+        gap: 20px;
+        max-width: 312.7px;
+        height: 48.4px;
+        border-radius: 10.122px;
+        box-shadow: 0 5.158px 32.237px 0 rgba(0, 0, 0, 0.10);
+        justify-content: space-around;
+    }
+
+    .subscribeInputAndButton input {
+        width: 160.0px;
+        height: 17.0px;
+        font-size: 11.568px;
+        letter-spacing: 0.347px;
+    }
+
+    .subscribeInputAndButton button {
+        max-width: 94.1px;
+        width: 100%;
+        height: 38.0px;
+        border-radius: 8.002px;
+    }
+
+    .subscribeInputAndButton button p{
+        font-size: 10.49px;
+        letter-spacing: 0.315px;
+        text-transform: uppercase;
+    }
+
 }
 
 
@@ -2588,6 +2915,66 @@
         position: absolute;
         top: 40%;
         right: 0;
+    }
+
+    .subscribe {
+        max-width: 315.0px;
+        height: 359px;
+        margin: 100px auto 100px auto;
+    }
+
+    .foodImageSubscribe {
+        max-width: 169.4px;
+        height: 170.7px;
+        right: 25%;
+        bottom: 0%;
+    }
+
+    .subscribeToSaleBlock {
+        max-width: 315.0px;
+        height: 257.0px;
+        background-image: none;
+        background-color: var(--purple-color-main);
+        border-radius: 15px;
+    }
+
+    .subscribeColumn {
+        margin: 0 auto 30px auto;
+        align-items: center;
+        gap: 2px;
+
+    }
+
+    .subscribeText h3 {
+        font-size: 41.447px;
+        line-height: normal;
+    }
+
+    .subscribeInputAndButton {
+        gap: 10px;
+        max-width: 260.3px;
+        height: 48.1px;
+        border-radius: 9.257px;
+        box-shadow: 0 4.717px 29.483px 0 rgba(0, 0, 0, 0.10);
+    }
+
+    .subscribeInputAndButton input {
+        width: 140.0px;
+        height: 17.0px;
+        font-size: 10.58px;
+        letter-spacing: 0.317px;
+    }
+
+    .subscribeInputAndButton button {
+        max-width: 86.1px;
+        height: 34.8px;
+        border-radius: 7.319px;
+    }
+
+    .subscribeInputAndButton button p{
+        font-size: 9.594px;
+        font-style: normal;
+        letter-spacing: 0.288px;
     }
 
 
