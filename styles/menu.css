@@ -608,6 +608,10 @@
     line-height: 28.89px;
 }
 
+.sortByCategory p.active {
+    color: var(--purple-color-main);
+}
+
 .priceSelector {
     display: flex;
     flex-direction: column;
