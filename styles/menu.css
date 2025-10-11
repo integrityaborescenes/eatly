@@ -55,6 +55,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: bannerAnim 0.2s ease-in forwards;
+}
+
+@keyframes bannerAnim {
+    from {
+        margin-right: 20px;
+    }
+    to {
+        padding-right: 0px;
+    }
 }
 
 .first {
