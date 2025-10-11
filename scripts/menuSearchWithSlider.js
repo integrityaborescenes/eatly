@@ -12,13 +12,15 @@ const thirdBanner = menuNewsSlider.querySelector('.third')
 
     let k = 1
     const autoSliderFlip = (k) => {
-
         menuNewsSliderLine1.classList.remove('active')
         menuNewsSliderLine1Back.classList.remove('active')
         menuNewsSliderLine2.classList.remove('active')
         menuNewsSliderLine2Back.classList.remove('active')
         menuNewsSliderLine3.classList.remove('active')
         menuNewsSliderLine3Back.classList.remove('active')
+        firstBanner.style.display = "none"
+        secondBanner.style.display = "none"
+        thirdBanner.style.display = "none"
         if (k===1) {
             menuNewsSliderLine1.classList.toggle('active')
             menuNewsSliderLine1Back.classList.toggle('active')
@@ -37,12 +39,34 @@ const thirdBanner = menuNewsSlider.querySelector('.third')
         }
     }
     autoSliderFlip(1)
-    setInterval(whatSliderIs = () => {
-        if (k<3) {
+
+    menuNewsSliderLine1.addEventListener('click', (e) => {
+        k=3
+        whatSliderIs(k)
+        clearInterval(sliderInterval)
+        sliderInterval = setInterval(whatSliderIs, 7000)
+    })
+    menuNewsSliderLine2.addEventListener('click', (e) => {
+        k=1
+        whatSliderIs(k)
+        clearInterval(sliderInterval)
+        sliderInterval = setInterval(whatSliderIs, 7000)
+    })
+    menuNewsSliderLine3.addEventListener('click', (e) => {
+        k=2
+        whatSliderIs(k)
+        clearInterval(sliderInterval)
+        sliderInterval = setInterval(whatSliderIs, 7000)
+    })
+
+    const whatSliderIs = () => {
+        if (k < 3) {
             k++
-            autoSliderFlip(k)
         } else {
-            k=1
-            autoSliderFlip(k)
+            k = 1
         }
-    }, 7000)
+        autoSliderFlip(k)
+    }
+
+    let sliderInterval = setInterval(whatSliderIs, 7000)
+
